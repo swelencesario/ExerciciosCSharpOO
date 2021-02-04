@@ -1,3 +1,5 @@
 # ExerciciosCSharpOO
 
-O objetivo deste repositório é registrar minha prática e evolução nos estudos sobre C# e Orientação a Objetos
+Exercícios relacionados a C# e Orientação a Objetos do curso C# COMPLETO Programação orientada a objetos + Projetos, ministrado pelo professor Nelio Alves.
+
+
