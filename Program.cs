@@ -6,6 +6,8 @@ namespace ExerciciosClassesObjetos
     {
         static void Main(string[] args)
         {
+            //Primeiros exercícios - Quem tem a maior idade:
+            
             Pessoa pessoa1, pessoa2;
 
             pessoa1 = new Pessoa();
@@ -23,6 +25,8 @@ namespace ExerciciosClassesObjetos
             string resultado = pessoa1.MaisIdade(pessoa1, pessoa2);
             Console.WriteLine(resultado);
 
+            //Primeiros exercícios - Mostrar a média do salário de dois funcionários
+
             Funcionario p1, p2;
 
             p1 = new Funcionario();
@@ -39,6 +43,8 @@ namespace ExerciciosClassesObjetos
 
             double resultadoSalario = (p1.Salario + p2.Salario) / 2;
             Console.WriteLine("Salário médio dos funcionários é: " + resultadoSalario.ToString());
+
+            //Primeiros exercícios - Adicionar e remover produtos do estoque
 
             Produto novoProduto = new Produto();
             Console.WriteLine("Digite o nome do produto: \n");
@@ -64,6 +70,8 @@ namespace ExerciciosClassesObjetos
 
             Console.WriteLine("Dados atualizados: " + novoProduto);
 
+            //Primeiros exercícios - Calcular área e perímetro do retângulo
+
             Retangulo retangulo = new Retangulo();
             Console.WriteLine("Digite a altura do retângulo: \n");
             retangulo.Altura = double.Parse(Console.ReadLine());
@@ -76,6 +84,8 @@ namespace ExerciciosClassesObjetos
             Console.WriteLine("Area do retângulo é: " + retangulo.Area());
             Console.WriteLine("O perímetro do retângulo é: " + retangulo.Perimetro());
 
+            //Primeiros exercícios - Calcular a nota final do aluno
+
             Aluno nota = new Aluno();
             Console.WriteLine("Digite a nota do primeiro trimestre: \n");
             nota.Nota1 = double.Parse(Console.ReadLine());
@@ -85,6 +95,15 @@ namespace ExerciciosClassesObjetos
             nota.Nota3 = double.Parse(Console.ReadLine());
             nota.Resultado();
             Console.WriteLine(nota.Resultado());
+
+            //Treinando membros estáticos - Conversor de moeda
+
+            Console.WriteLine("Digite a cotação do dólar: \n");
+            double cot = double.Parse(Console.ReadLine());
+            Console.WriteLine("Quantos dólares você vai comprar? \n");
+            double qtdeDolar = double.Parse(Console.ReadLine());
+            double resultadoConversao = ConversorDeMoeda.Calculos(cot, qtde);
+            Console.WriteLine("Valor a ser pago em reais: " + resultado);
 
 
 
