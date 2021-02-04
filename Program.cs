@@ -105,9 +105,37 @@ namespace ExerciciosClassesObjetos
             double resultadoConversao = ConversorDeMoeda.Calculos(cot, qtde);
             Console.WriteLine("Valor a ser pago em reais: " + resultado);
 
+            //Construtores, encapsulamento, this, sobrecarga:
 
+            ContaBancaria contaBancaria;
 
+            Console.WriteLine("Digite o nome do titular: ");
+            string nome = Console.ReadLine();
+            Console.WriteLine("Digite o número da conta: ");
+            int numeroConta = int.Parse(Console.ReadLine());
+            Console.WriteLine("Haverá depósito inicial? ");
+            char resposta = char.Parse(Console.ReadLine());
+            if (resposta == 's' || resposta == 'S')
+            {
+                Console.Write("Entre com o valor do depósito: ");
+                double deposito = double.Parse(Console.ReadLine());
+                contaBancaria = new ContaBancaria(nome, numeroConta, deposito);
+                Console.WriteLine(contaBancaria);
+            }
+            else
+            {
+                contaBancaria = new ContaBancaria(nome, numeroConta);
+            }
+            Console.Write("Digite o valor do saque: ");
+            double saque = double.Parse(Console.ReadLine());
+            contaBancaria.Saque(saque);
+            Console.WriteLine(contaBancaria);
 
         }
+
+
+
+
+    }
     }
 }
